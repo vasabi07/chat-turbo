@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */
+
+
+.message-box {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  max-width: 70%;
+  padding: 7px;
+  margin: 5px 0;
+  border-radius: 5px;
+  word-wrap: break-word;
+  position: relative;
+}
+
+.message.sent {
+  align-self: flex-end;
+  background-color: #2164ac;
+  color: #000;
+}
+
+.message.received {
+  align-self: flex-start;
+  background-color: #53d072;
+  border: 1px solid #ddd;
+  color: #000;
+}
+
